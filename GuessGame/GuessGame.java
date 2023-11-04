@@ -1,3 +1,4 @@
+package GuessGame;
 public class GuessGame {
 // содержит три переменных экземпляра для трех объектов Player
     Player p1;
@@ -36,13 +37,13 @@ public class GuessGame {
             guessp3 = p3.number;
             System.out.println("Третий игрок думает, что это " + guessp3);
 // проверяем варианты каждого из игроков на соответствие загаданному числу
-            if (guessp1 = targetNumber) {
+            if (guessp1 == targetNumber) {
                 p1isRight = true;
             }
-            if (guessp2 = targetNumber) {
+            if (guessp2 == targetNumber) {
                 p2isRight = true;
             }
-            if (guessp3 = targetNumber) {
+            if (guessp3 == targetNumber) {
                 p2isRight = true;
             }
 // если первый, или второй, или третий игрок угадал...
@@ -60,3 +61,6 @@ public class GuessGame {
         } // конец цикла
     } //конец метода
 } //конец класса
+
+
+
