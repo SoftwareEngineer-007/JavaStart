@@ -1,11 +1,5 @@
-class Movie {
-    String title;
-    String genre;
-    int rating;
-    void playIt() {
-        System.out.println("Проигрывание фильма");
-    }
-}
+package Movie;
+
 public class MovieTestDrive {
     public static void main(String[] args) {
         Movie one = new Movie();
