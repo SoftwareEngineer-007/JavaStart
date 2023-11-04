@@ -44,7 +44,7 @@ public class GuessGame {
                 p2isRight = true;
             }
             if (guessp3 == targetNumber) {
-                p2isRight = true;
+                p3isRight = true;
             }
 // если первый, или второй, или третий игрок угадал...
             if (p1isRight || p2isRight || p3isRight) {
