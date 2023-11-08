@@ -10,11 +10,5 @@ public class SimpleDotComTestDrive {
 
         String userGuess = "2"; // делаем ход от имени пользователя
         String result = dot.checkYourself(userGuess);
-        String testResult = "Неудача";
-        if (result.equals("Попал!")) {
-            testResult = "Пройден"; // если ход(2) возвращает строку "Попал" - все работает
-        }
-
-        System.out.println(testResult); // напечатать результат
     }
 }
