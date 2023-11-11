@@ -29,7 +29,7 @@ private void setUpGame() {
 } //конец метода setUpGame
 
 private void startPlaying() {
-    while(!dotComList.isEmpty()) {
+    while (!dotComList.isEmpty()) {
         String userGuess = helper.getUserInput("Сделайте ход");
         checkUserGuess(userGuess);
     } // конец while
@@ -51,6 +51,17 @@ private void checkUserGuess(String userGuess) {
         }
     } // конец for
     System.out.println(result);
+} // конец метода
+
+private void finishGame() {
+    System.out.println("Все 'сайты' ушли ко дну! Хорошая работа!");
+    if (numOfGuesses <= 18) {
+        System,out.println("Это заняло у вас всего " + numOfGuesses + " попыток.");
+        System,out.println("Вы успели до того, как по вам открыли ответный огонь.");
+    } else {
+        System,out.println("Это заняло у вас довольно много времени. " + numOfGuesses + " попыток.");
+        System,out.println("Рыбы водят хороводы вокруг вас))");
+    }
 } // конец метода
 
 public class DotComBust {
