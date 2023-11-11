@@ -36,6 +36,23 @@ private void startPlaying() {
     finishGame();
 } // конец метода startPlaying method
 
+private void checkUserGuess(String userGuess) {
+    numOfGuesses++;
+    String result = "Мимо:(";
+
+    for (DotCom dotComToTest : dotComList) {
+        result = dotComToTest.checkYourself(userGuess);
+        if (result.equals("Попал!")) {
+            break;
+        }
+        if (result.equals("Потопил!!!")) {
+            dotComList.remove(dotComToTest);
+            break;
+        }
+    } // конец for
+    System.out.println(result);
+} // конец метода
+
 public class DotComBust {
     public static void main(String[] args) {
         int numOfGuesses = 0; // следит за кол-вом ходов пользователя
