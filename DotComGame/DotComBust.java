@@ -28,6 +28,14 @@ private void setUpGame() {
     } // конец цикла
 } //конец метода setUpGame
 
+private void startPlaying() {
+    while(!dotComList.isEmpty()) {
+        String userGuess = helper.getUserInput("Сделайте ход");
+        checkUserGuess(userGuess);
+    } // конец while
+    finishGame();
+} // конец метода startPlaying method
+
 public class DotComBust {
     public static void main(String[] args) {
         int numOfGuesses = 0; // следит за кол-вом ходов пользователя
