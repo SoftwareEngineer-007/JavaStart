@@ -1,11 +1,11 @@
 package DotComGame;
 
-public class SimpleDotComGame {
+public class DotComBust {
     public static void main(String[] args) {
         int numOfGuesses = 0; // следит за кол-вом ходов пользователя
         GameHelper helper = new GameHelper(); 
     
-        SimpleDotCom theDotCom = new SimpleDotCom(); // создаем объект
+        DotCom theDotCom = new DotCom(); // создаем объект
         int randomNum = (int) (Math.random() * 5); // генерация первой ячейки
     
         int[] locations = {randomNum, randomNum + 1, randomNum + 2}; // формирование массива ячеек

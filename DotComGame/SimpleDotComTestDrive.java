@@ -3,7 +3,7 @@ package DotComGame;
 public class SimpleDotComTestDrive {
 
     public static void main(String[] args) {
-        SimpleDotCom dot = new SimpleDotCom(); // создаем экземпляр класса
+        DotCom dot = new DotCom(); // создаем экземпляр класса
 
         int[] locations = {2, 3, 4}; // создаем массив для местоположения DotCom'a
         dot.setLocationCells(locations); // вызываем сеттер
